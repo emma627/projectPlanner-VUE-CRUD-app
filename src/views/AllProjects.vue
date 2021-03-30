@@ -2,7 +2,11 @@
   <div class="home">
     <div v-if="projects.length">
       <div v-for="project in projects" :key="project.id">
-        <singleProject @delete="handleDelete" :project="project" />
+        <singleProject
+          @delete="handleDelete"
+          @toggle="handleToggle"
+          :project="project"
+        />
       </div>
     </div>
   </div>
@@ -13,7 +17,7 @@ import singleProject from "../components/singleProject.vue";
 export default {
   name: "AllProjects",
   components: {
-    singleProject
+    singleProject,
   },
   data() {
     return {
@@ -29,6 +33,12 @@ export default {
   methods: {
     handleDelete(id) {
       this.projects = this.projects.filter((project) => project.id !== id);
+    },
+    handleToggle(id) {
+      let projectToggleComplete = this.projects.find(project=>{
+        return project.id === id
+      })
+      projectToggleComplete.complete = !projectToggleComplete.complete
     },
   },
 };

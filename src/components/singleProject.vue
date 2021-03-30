@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       showDetails: false,
-      uri: 'http://localhost:5000/projects/' + this.project.id
+      uri: "http://localhost:5000/projects/" + this.project.id,
     };
   },
   methods: {
@@ -30,6 +30,15 @@ export default {
         .then(this.$emit("delete", this.project.id))
         .catch((err) => console.log(err));
     },
+    toggleComplete() {
+      fetch(this.uri, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ complete: !this.project.complete })
+      }).then(() => {
+        this.$emit('toggle', this.project.id)
+      }).catch(err => console.log(err))
+    }
   },
 };
 </script>

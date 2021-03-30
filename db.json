@@ -19,16 +19,16 @@
       "complete": true
     },
     {
-        "id": 4,
-        "title": "Personal portfolio",
-        "details": "Make sure all the promo links and coupon codes are up to date!!!!!",
-        "complete": true
-      },
-      {
-        "id": 5,
-        "title": "Simple Game",
-        "details": "Make sure all the promo links and coupon codes are up to date!!!!!",
-        "complete": false
-      }
+      "id": 4,
+      "title": "Personal portfolio",
+      "details": "Make sure all the promo links and coupon codes are up to date!!!!!",
+      "complete": true
+    },
+    {
+      "id": 5,
+      "title": "Simple Game",
+      "details": "Make sure all the promo links and coupon codes are up to date!!!!!",
+      "complete": false
+    }
   ]
 }
