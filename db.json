@@ -1,0 +1,35 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Web Application Using API",
+        "details": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum.",
+        "complete": true
+      },
+      {
+        "id": 2,
+        "title": "Brochure Site",
+        "details": "Lorem ipsum",
+        "complete": false
+      },
+      {
+        "id": 3,
+        "title": "E-Commerce site",
+        "details": "Lorem ipsum dolor sit amet, vim odio prompta habemus ex. Vidit falli mel id, sit ea ipsum ridens maiorum. Et usu commodo temporibus disputationi, sale probo menandri eu per. Consulatu percipitur deterruisset cu mei, vis doming persius forensibus no.",
+        "complete": true
+      },
+      {
+          "id": 4,
+          "title": "Personal portfolio",
+          "details": "Lorem ipsum dolor sit amet, vim odio prompta habemus ex. Vidit falli mel id, sit ea ipsum ridens maiorum. Et usu commodo temporibus disputationi, sale probo menandri eu per. Consulatu percipitur deterruisset cu mei, vis doming persius forensibus no.",
+          "complete": true
+        },
+        {
+          "id": 5,
+          "title": "Simple Game",
+          "details": "Lorem ipsum dolor sit amet, vim odio prompta habemus ex. Vidit falli mel id, sit ea ipsum ridens maiorum. Et usu commodo temporibus disputationi, sale probo menandri eu per. Consulatu percipitur deterruisset cu mei, vis doming persius forensibus no.",
+          "complete": false
+        }
+    ]
+  }
+  
