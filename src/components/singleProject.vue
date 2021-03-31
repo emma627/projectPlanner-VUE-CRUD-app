@@ -4,6 +4,9 @@
       <h3 @click="showDetails = !showDetails">{{ project.title }}</h3>
       <div class="icons">
         <span @click="deleteProject" class="material-icons">delete</span>
+        <router-link :to="{ name: 'EditProject', params: { id: project.id } }">
+          <span class="material-icons">edit</span>
+        </router-link>
         <span @click="toggleComplete" class="material-icons tick">done</span>
       </div>
     </div>
@@ -32,13 +35,15 @@ export default {
     },
     toggleComplete() {
       fetch(this.uri, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ complete: !this.project.complete })
-      }).then(() => {
-        this.$emit('toggle', this.project.id)
-      }).catch(err => console.log(err))
-    }
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ complete: !this.project.complete }),
+      })
+        .then(() => {
+          this.$emit("toggle", this.project.id);
+        })
+        .catch((err) => console.log(err));
+    },
   },
 };
 </script>
