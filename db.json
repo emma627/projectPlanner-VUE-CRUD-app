@@ -29,6 +29,12 @@
       "title": "Simple Game",
       "details": "Make sure all the promo links and coupon codes are up to date!!!!!",
       "complete": false
+    },
+    {
+      "title": "travailler encore sur vuejs",
+      "details": "composition API!!!!",
+      "complete": false,
+      "id": 6
     }
   ]
 }
