@@ -1,24 +1,21 @@
-# vue-project-planner
+projectPlanner-VUE-CRUD-app
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Using json server to stock the data
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Link to the site: 
 
-### Lints and fixes files
-```
-npm run lint
-```
+VUE CRUD application
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+To run this APP:
+
+1.git clone https://github.com/emma627/projectPlanner-VUE-CRUD-app.git
+
+2.cd projectPlanner-VUE-CRUD-app
+
+3.npm install
+
+4.npm i concurrently --save-dev
+
+5.npm run dev
+
